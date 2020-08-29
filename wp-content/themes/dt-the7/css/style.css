@@ -74,7 +74,7 @@
   padding-bottom: 30px;
 }
 .background-info1 {
-  background-color: #5b5b58;
+  background-color: #384655;
 }
 .twitter-area a {
 }
@@ -85,8 +85,15 @@
 .text-clr a {
   color: whitesmoke;
 }
+.text-clr {
+}
+
 .text-clr h4 {
-  color: #d1004b !important;
+  background-color: #d1004b;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #ffffff !important;
 }
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
