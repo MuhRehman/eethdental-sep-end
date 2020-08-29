@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 5px;
+}
+.grid-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  font-size: 30px;
+  text-align: center;
+}
+.stacks_out {
+  position: relative;
+  display: block;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stacks1 {
+  background-color: rgba(0, 167, 126, 1);
+  padding: 12px;
+  margin: 12px;
+}
+.stacks2 {
+  background-color: rgba(247, 113, 125, 1);
+  padding: 12px;
+  margin: 12px;
+}
+.stacks3 {
+  background-color: rgba(59, 89, 152, 1);
+  padding: 12px;
+  margin: 12px;
+}
+.stacks4 {
+  background-color: rgba(64, 153, 255, 1);
+  padding: 12px;
+  margin: 12px;
+}
+.stacks5 {
+  background-color: rgba(237, 161, 33, 1) !important;
+  padding: 12px;
+  margin: 12px;
+}
+.stacks6 {
+  background-color: rgba(0, 132, 191, 1);
+  padding: 12px;
+  margin: 12px;
+}
+.stacks a {
+  font-size: 16px;
+  padding: 19px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.background-info {
+  background-color: rgba(0, 70, 87, 1);
+  padding-bottom: 30px;
+}
+.background-info1 {
+  background-color: #5b5b58;
+}
+.twitter-area a {
+}
+.wf-container12 {
+  max-width: 800px;
+  margin: auto;
+}
+.text-clr a {
+  color: whitesmoke;
+}
+.text-clr h4 {
+  color: #d1004b !important;
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* background-image: url(""); */
+  background-image: url("../images/banner-3.jpg !important");
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; */
+}
+#wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  height: 190px;
+  width: 100%;
+  /* overflow: hidden; */
+  background: white url("../images/banner-contact1.png") no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /* The two lines below make the photo opaque. No Apacity = 1  Full Opacity = 0  :-) */
+
+  line-height: 2.8em;
+}
+
+strong {
+  color: rgb(216, 6, 76);
+
+  /* border: 2px solid red; */
+}
+h1 {
+  /* margin-top: 2em; */
+
+  font-family: Arial, San-serif;
+  font-size: 70px;
+  text-align: center;
+  color: rgb(216, 6, 76);
+  /* width: 100%; */
+}
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* body { margin: 0; }  */
+div#slider {
+  overflow: hidden;
+}
+div#slider figure img {
+  width: 20%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+.topbar {
+  background-color: #d1004b;
+}
+.icons a {
+  color: whitesmoke;
+}
+.number h3 {
+  color: whitesmoke;
+}
+.number i {
+  color: whitesmoke;
+}
+.number {
+  float: right;
+  padding-top: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .background-info .social-icons {
+    margin-bottom: 22px !important;
+  }
+  .background-info12 {
+    /* background: red; */
+    padding: 23px;
+  }
+
+  .margin-bottom {
+    padding-bottom: 32px;
+  }
+  .number i {
+    font-size: 20px;
+  }
+  .number h3 {
+    font-size: 17px;
+    padding: px;
+  }
+}
