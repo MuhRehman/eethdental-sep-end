@@ -95,6 +95,232 @@
   text-align: center;
   color: #ffffff !important;
 }
+.text-al-center {
+  text-justify: center;
+}
+.quotes {
+  position: relative;
+  min-height: 300px;
+  background: #02688d url(../images/quote-Bg.jpg) repeat;
+  padding: 100px 0;
+}
+.quotes {
+  margin-bottom: 50px;
+}
+.quotes1 {
+  position: relative;
+  /* min-height: 400px; */
+  background: #02688d url(../images/quote-Bg.jpg) repeat;
+  padding: 0px 0;
+  border: 1px solid red;
+}
+.quotes1 {
+  margin-bottom: 10px;
+}
+.logoScroll {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.col-all-12 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+.head-img {
+  width: 400px;
+  margin-top: 80px;
+  /* border: 1px solid red; */
+}
+.box-area1 {
+  margin: 22px 22px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* -------------logo-sroll----------------- */
+/* Logo Slider */
+
+.logo-slider {
+  background: white;
+  -webkit-box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.125);
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    to(rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 175px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.logo-slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.logo-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.logo-slider .logo-slide-track {
+  -webkit-animation: logo-scroll 60s linear infinite;
+  animation: logo-scroll 60s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(250px * 14);
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.logo-slider .slide {
+  height: 150px;
+  width: 250px;
+  padding: 20px;
+}
+
+@-webkit-keyframes logo-scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes logo-scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.logo-sroller {
+  /* position: absolute !important; */
+}
+/* -------------logo-sroll-end----------------- */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   /* background-image: url(""); */
@@ -124,9 +350,18 @@
   margin: 0 auto;
   width: 100%;
 }
-
+.associates-text {
+  font-weight: 900 !important;
+}
+.borderUnder {
+  border-bottom: 5px solid #d1004b;
+  width: 20%;
+  margin: auto;
+  padding-top: 12px;
+  padding-bottom: 2px;
+}
 header {
-  height: 190px;
+  height: 230px;
   width: 100%;
   /* overflow: hidden; */
   background: white url("../images/banner-contact1.png") no-repeat center center;
@@ -138,7 +373,57 @@ header {
 
   line-height: 2.8em;
 }
+.resoures {
+  height: 230px;
+  width: 100%;
+  /* overflow: hidden; */
+  background: #f1f1f1 url("../images/resouces.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /* The two lines below make the photo opaque. No Apacity = 1  Full Opacity = 0  :-) */
 
+  line-height: 2.8em;
+}
+.whatwedo {
+  height: 230px;
+  width: 100%;
+  /* overflow: hidden; */
+  background: #f1f1f1 url("../images/") no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  /* The two lines below make the photo opaque. No Apacity = 1  Full Opacity = 0  :-) */
+
+  line-height: 2.8em;
+}
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content1 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 strong {
   color: rgb(216, 6, 76);
 
@@ -219,6 +504,17 @@ div#slider figure {
 @media only screen and (max-width: 768px) {
   .background-info .social-icons {
     margin-bottom: 22px !important;
+  }
+  .head-img {
+    width: 70%;
+  }
+  .box-area1 h1 {
+    font-size: 23px !important;
+    /* border: 1px solid red; */
+    margin: 2px;
+  }
+  .box-area1 p {
+    margin: 12px;
   }
   .background-info12 {
     /* background: red; */
